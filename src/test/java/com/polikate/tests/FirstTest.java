@@ -2,12 +2,12 @@ package com.polikate.tests;
 
 import org.testng.annotations.Test;
 
+public class FirstTest {
 
-public class FirstTest extends Steps {
-    
     @Test
     public void firstTest() {
-        startSearch();
-        checkResult();
+        new Steps().startSearch();
+        new Steps().checkResult();
+
     }
 }

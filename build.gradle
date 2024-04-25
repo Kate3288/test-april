@@ -19,5 +19,6 @@ dependencies {
 }
 test {
     useTestNG()
-    include '**/*Test.class' // Включаем все классы, которые оканчиваются на "Test"
+    include '**/*Test.class'
+
 }

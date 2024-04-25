@@ -2,13 +2,15 @@ package com.polikate.tests;
 
 public class Steps {
 
+    private final StartBrowserPage startBrowserPage = new StartBrowserPage();
+    private final SearchResultPage searchResultPage = new SearchResultPage();
+
+
     public void startSearch() {
-        StartBrowserPage startBrowserPage = new StartBrowserPage();
         startBrowserPage.startSearch();
     }
 
     public void checkResult() {
-        SearchResultPage searchResultPage = new SearchResultPage();
         searchResultPage.checkSearchResult();
     }
 }
